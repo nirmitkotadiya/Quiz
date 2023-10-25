@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="simple">
+        <div class="home-box custom-box">
+            <h3>Instruction:</h3>
+            <ol>
+                <li>There are 10 questions in this Quiz.</li>
+                <li>Every question is of 1 mark.</li>
+                <li>You can select only one option as the answer to each question.</li>
+            </ol>
+            <div><button type="button" class="btn" onclick="next(1)">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="simple">
+        <div class="quiz-box custom-box">
+
+            <div class="question-number">
+                Question 1 of 10
+            </div>
+            <div class="question-text">
+                HTML Stands for.....
+            </div>
+            <div class="option-container">
+                <label><input type="radio" name="question 1" class="opt"> Hyper text Machine Language<br></label>
+                <label><input type="radio" name="question 1" class="opt"> High text Markup Language<br></label>
+                <label><input type="radio" name="question 1" class="opt" id="correct1"> Hyper text Markup
+                    Language<br></label>
+                <label><input type="radio" name="question 1" class="opt"> None of these<br></label>
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn" onclick="next(2)">Next</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="simple">
+        <div class="quiz-box custom-box">
+
+            <div class="question-number">
+                Question 2 of 10
+            </div>
+            <div class="question-text">
+                The correct sequence of HTML tags for starting a webpage is....
+            </div>
+            <div class="option-container">
+                <label><input type="radio" name="question 2" class="opt"> head,title,html,body<br></label>
+
+                <label><input type="radio" name="question 2" class="opt" id="correct2"> html,head,title,body<br></label>
+                <label><input type="radio" name="question 2" class="opt"> html,body,title,head<br></label>
+
+                <label><input type="radio" name="question 2" class="opt"> title,body,html,head<br></label>
+
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn" onclick="previous(1)">Previous</button>
+                <button type="button" class="btn" onclick="next(3)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="simple">
+        <div class="quiz-box custom-box">
+
+            <div class="question-number">
+                Question 3 of 10
+            </div>
+            <div class="question-text">
+                Which value is there for autoplaying the YouTube video?
+            </div>
+            <div class="option-container">
+                <label><input type="radio" name="question 3" class="opt"> 0
+                    <br></label>
+                <label><input type="radio" name="question 3" class="opt" id="correct3"> 1<br></label>
+                <label><input type="radio" name="question 3" class="opt"> 2
+                    <br></label>
+                <label><input type="radio" name="question 3" class="opt"> Infinite
+                    <br></label>
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn" onclick="previous(2)">Previous</button>
+                <button type="button" class="btn" onclick="next(4)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="simple">
+        <div class="quiz-box custom-box">
+
+            <div class="question-number">
+                Question 4 of 10
+            </div>
+            <div class="question-text">
+                What is the smallest header in HTML by default?
+            </div>
+            <div class="option-container">
+                <label><input type="radio" name="question 4" class="opt"> h1
+                    <br></label>
+                <label><input type="radio" name="question 4" class="opt"> h4<br></label>
+                <label><input type="radio" name="question 4" class="opt"> h3
+                    <br></label>
+                <label><input type="radio" name="question 4" class="opt" id="correct4"> h6
+                    <br></label>
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn" onclick="previous(3)">Previous</button>
+                <button type="button" class="btn" onclick="next(5)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="simple">
+        <div class="quiz-box custom-box">
+
+            <div class="question-number">
+                Question 5 of 10
+            </div>
+            <div class="question-text">
+                What are the types of lists available in HTML?
+            </div>
+            <div class="option-container">
+                <label> <input type="radio" name="question 5" class="opt" id="correct5"> Ordered,Unordered lists
+                    <br></label>
+                <label><input type="radio" name="question 5" class="opt"> Bulleted,Numbered lists
+                    <br></label>
+                <label><input type="radio" name="question 5" class="opt"> Named,Unnamed Lists
+                    <br></label>
+                <label><input type="radio" name="question 5" class="opt"> None of the above
+                    <br></label>
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn" onclick="previous(4)">Previous</button>
+                <button type="button" class="btn" onclick="next(6)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="simple">
+        <div class="quiz-box custom-box">
+
+            <div class="question-number">
+                Question 6 of 10
+            </div>
+            <div class="question-text">
+                HTML files are saved by default with the extention?
+            </div>
+            <div class="option-container">
+                <label><input type="radio" name="question 6" class="opt" id="correct6"> .html
+                    <br></label>
+                <label> <input type="radio" name="question 6" class="opt"> .h<br></label>
+                <label><input type="radio" name="question 6" class="opt"> .ht
+                    <br></label>
+                <label><input type="radio" name="question 6" class="opt"> None of the above
+                    <br></label>
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn" onclick="previous(5)">Previous</button>
+                <button type="button" class="btn" onclick="next(7)">Next</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="simple">
+        <div class="quiz-box custom-box">
+
+            <div class="question-number">
+                Question 7 of 10
+            </div>
+            <div class="question-text">
+                What are the attributes used to change the size of an image?
+            </div>
+            <div class="option-container">
+                <label><input type="radio" name="question 7" class="opt"> Top and Bottom
+                    <br></label>
+                <label><input type="radio" name="question 7" class="opt"> Big and Small<br></label>
+                <label><input type="radio" name="question 7" class="opt" id="correct7"> Width and Height
+                    <br></label>
+                <label><input type="radio" name="question 7" class="opt"> None of the above
+                    <br></label>
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn" onclick="previous(6)">Previous</button>
+                <button type="button" class="btn" onclick="next(8)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="simple">
+        <div class="quiz-box custom-box">
+
+            <div class="question-number">
+                Question 8 of 10
+            </div>
+            <div class="question-text">
+                Which attributed is used to provide an unique name to a HTML element?
+            </div>
+            <div class="option-container">
+                <label><input type="radio" name="question 8" class="opt" id="correct8"> id
+                    <br></label>
+                <label><input type="radio" name="question 8" class="opt"> class<br></label>
+                <label><input type="radio" name="question 8" class="opt"> type
+                    <br></label>
+                <label><input type="radio" name="question 8" class="opt"> None of the above
+                    <br></label>
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn" onclick="previous(7)">Previous</button>
+                <button type="button" class="btn" onclick="next(9)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="simple">
+        <div class="quiz-box custom-box">
+
+            <div class="question-number">
+                Question 9 of 10
+            </div>
+            <div class="question-text">
+                Which tag of SVG is used to draw a circle?
+            </div>
+            <div class="option-container">
+                <label><input type="radio" name="question 9" class="opt" id="correct9"> circle
+                    <br></label>
+                <label><input type="radio" name="question 9" class="opt"> rect<br></label>
+                <label><input type="radio" name="question 9" class="opt"> both
+                    <br></label>
+                <label><input type="radio" name="question 9" class="opt"> None of the above
+                    <br></label>
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn" onclick="previous(8)">Previous</button>
+                <button type="button" class="btn" onclick="next(10)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="simple">
+        <div class="quiz-box custom-box">
+
+            <div class="question-number">
+                Question 10 of 10
+            </div>
+            <div class="question-text">
+                Which CSS property is used to set the color of the text?
+            </div>
+            <div class="option-container">
+                <label><input type="radio" name="question 10" class="opt"> bgcolor
+                    <br></label>
+                <label><input type="radio" name="question 10" class="opt"> c<br></label>
+                <label><input type="radio" name="question 10" class="opt"> colour
+                    <br></label>
+                <label><input type="radio" name="question 10" class="opt" id="correct10"> color
+                    <br></label>
+            </div>
+            <div class="next-question-btn">
+                <button type="button" class="btn" onclick="previous(9)">Previous</button>
+                <button class="btn" onclick="next(11)">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="simple">
+        <div class="result-box custom-box">
+            <h1>Quiz Result</h1>
+            <table>
+                <tr>
+                    <td>Total Questions</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Attempt Questions</td>
+                    <td id="t_attempt"></td>
+                </tr>
+                <tr>
+                    <td>Correct Questions</td>
+                    <td id="t_correct"></td>
+                </tr>
+                <tr>
+                    <td>Wrong Questions</td>
+                    <td id="t_wrong"></td>
+                </tr>
+                <tr>
+                    <td>Percentage</td>
+                    <td id="t_percentage"></td>
+                </tr>
+            </table>
+
+            <button type="button" class="btn" onclick="previous(0)">Go To Home</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementsByClassName('simple')[0].style.display = "block";
+
+
+
+        function next(id) {
+            if (id == 11) {
+                result();
+            }
+            document.getElementsByClassName('simple')[id - 1].style.display = "none";
+            document.getElementsByClassName('simple')[id].style.display = "block";
+        }
+
+        function previous(id) {
+
+            if (id == 0) {
+                document.getElementsByClassName('simple')[11].style.display = "none";
+                document.getElementsByClassName('simple')[id].style.display = "block";
+            }
+            else {
+                document.getElementsByClassName('simple')[id + 1].style.display = "none";
+                document.getElementsByClassName('simple')[id].style.display = "block";
+            }
+
+        }
+
+        function result() {
+            var score = 0;
+            if (document.getElementById('correct1').checked) {
+                score++;
+            }
+            if (document.getElementById('correct2').checked) {
+                score++;
+            }
+            if (document.getElementById('correct3').checked) {
+                score++;
+            }
+            if (document.getElementById('correct4').checked) {
+                score++;
+            }
+            if (document.getElementById('correct5').checked) {
+                score++;
+            }
+            if (document.getElementById('correct6').checked) {
+                score++;
+            }
+            if (document.getElementById('correct7').checked) {
+                score++;
+            }
+            if (document.getElementById('correct8').checked) {
+                score++;
+            }
+            if (document.getElementById('correct9').checked) {
+                score++;
+            }
+            if (document.getElementById('correct10').checked) {
+                score++;
+            }
+            attempt = 0;
+            for (var op = 0; op < 40; op++) {
+                if (document.getElementsByClassName("opt")[op].checked == true) {
+                    attempt++;
+                }
+            }
+            var wrong = attempt - score;
+            var Percentage = (score / 10) * 100
+            document.getElementById("t_correct").innerHTML = "" + score;
+            document.getElementById("t_attempt").innerHTML = "" + attempt;
+            document.getElementById("t_wrong").innerHTML = "" + wrong;
+            document.getElementById("t_percentage").innerHTML = "" + Percentage + "%"
+
+            for (var op = 0; op < 40; op++) {
+                document.getElementsByClassName("opt")[op].checked = false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
